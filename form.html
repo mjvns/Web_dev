@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML FORMS</title>
+  <style>
+	form
+	{
+		width: 500px;
+		padding: 20px;
+		border: 2px black solid;
+		margin: 0 auto;
+	}
+	input[type="text"],input[type="password"],Select
+	{
+		width: 420px;
+		height: 20px;
+		border: none;
+		border-bottom: 1px silver solid;
+		outline: none;
+	}
+	textarea
+	{
+		resize: none;
+		border: none;
+		border-bottom: 1px silver solid;
+		outline: none;
+	}
+	input[type="submit"]
+	{
+		width: 420px;
+		height: 35px;
+		background: pink;
+		color: purple;
+		border: 1px solid black;
+		padding: 8px 0;
+	}
+	input[type="submit"]:hover
+	{
+		border-color: red;
+	}
+	input[type="text"]:focus,input[type="password"]:focus,Select:focus,textarea:focus{
+		background: lightblue;
+	}
+	input[type="text"]:hover,input[type="password"]:hover,Select:hover,textarea:hover{
+		border-color: red;
+	}
+  </style>
+</head>
+<body>
+	<form>
+		<h2>Fill the form</h2><hr>
+		<table>
+		 <tr>
+			<td><label for="user">User Name</label></td>
+			<td><input type="text" name="user" id="user">
+		 </tr>
+		  <tr>
+			<td><label for="pass">Password</label></td>
+			<td><input type="password" name="password" id="pass">
+		 </tr>
+		 <tr>
+			<td><label>Gender</label></td>
+			<td>
+				Male:<input type="radio" name="gender" value="male"> <br> Female:<input type="radio" name="gender" value="female">
+				<br><br>
+			</td>
+		 </tr>
+		 <tr>
+			<td><label>Skills</label></td>
+			<td>
+				HTML:<input type="checkbox" name="html" value="html"> <br> CSS:<input type="checkbox" name="css" value="css"> <br> JAVASCRIPT:<input type="checkbox" name="javascript" value="javascript">
+				<br>
+			</td>
+		 </tr>
+		  <tr>
+			<td><label for="country">Select your country</label></td>
+			<td>
+				<Select id="country" name="country">
+					<option value="">Select your country</option>
+					<option value="ind">India</option>
+					<option value="aus">Australia</option>
+					<option value="jap">Japan</option>
+					<option value="phil">Phillippines</option>
+					<option value="wi">West Indies</option>
+				</Select>
+			</td>
+		 </tr>
+		 <tr>
+			<td><label for="comment">Comments</label></td>
+			<td><textarea rows="10" cols="50" id="comment"></textarea></td>
+		 </tr>
+		  <tr>
+			<td></td>
+			<td><input type="submit" name="submit" value="Click to submit"></td>
+		 </tr>
+		</table>
+	</form>
+</body>
+</html>
