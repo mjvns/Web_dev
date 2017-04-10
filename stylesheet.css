@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#container{
+	width: 1320px;
+	margin: 0 auto;
+	border: 1px solid black;
+	font-family: arial;
+}
+#header{
+	background: brown;
+	width: 1300px;
+	padding: 20px 10px;
+	color: white;
+}
+#nav{
+	background: orange;
+	width: 1320px;
+	height: 60px;
+}
+#nav ul{
+	list-style: none;
+}
+#nav ul li{
+	float: left;
+	width: 180px;
+	padding: 20px;
+}
+#nav ul li:hover{
+	background: #ffd280;
+}
+#mid{
+	background: gray;
+	width: 1320px;
+}
+#leftarea{
+	background: lightgreen;
+	width: 800px;
+	height: 300px;
+	float: left;
+}
+#rightarea{
+	background: lightblue;
+	width: 520px;
+	height: 300px;
+	float: left;
+}
+#footer{
+	background: yellow;
+	width: 1320px;
+	height: 50px;
+}
