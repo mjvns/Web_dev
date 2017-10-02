@@ -6,7 +6,9 @@ var fetchNotes = () =>{
 	try{
 	var noteString = fs.readFileSync('notes-data.json');
 	return JSON.parse(noteString);
-	}catch(e){}
+	}catch(e){
+		return [];
+	}
 }
 
 var saveNotes = (notes) =>{
@@ -38,7 +40,12 @@ var getNote = (title) =>{
 }
 
 var removeNote = (title) =>{
-	console.log(title,'note removed successfuly!');
+	var notes = fetchNotes();
+	var filteredNotes = notes.filter((note) => note.title !== title);
+	saveNotes(filteredNotes);
+	console.log(notes.length);
+	console.log(filteredNotes.length);
+	return notes.length !== filteredNotes.length;
 }
 
 module.exports ={
