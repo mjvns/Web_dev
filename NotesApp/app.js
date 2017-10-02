@@ -13,7 +13,6 @@ console.log('Process:',process.argv);
 console.log('Yargs:',argv);
 
 if(command === 'add'){
-	console.log('adding new list!');
 	notes.addNote(argv.title,argv.body);
 }else if(command === 'list'){
 	notes.getAll();
