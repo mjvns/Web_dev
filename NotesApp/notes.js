@@ -36,21 +36,31 @@ var getAll = () =>{
 };
 
 var getNote = (title) =>{
-	console.log(title);
+	var notes = fetchNotes();
+	var gotNotes = notes.filter((note) => note.title === title);
+	return gotNotes[0];
 }
 
 var removeNote = (title) =>{
 	var notes = fetchNotes();
-	var filteredNotes = notes.filter((note) => note.title !== title);
+	var filteredNotes = notes.filter((note) => note.title !== title); // pick the nodes that do not need to be deleted!
 	saveNotes(filteredNotes);
 	console.log(notes.length);
 	console.log(filteredNotes.length);
 	return notes.length !== filteredNotes.length;
 }
 
+// function to print the note details
+var logNote = (note) =>{
+		console.log('--');
+		console.log(`Title: ${note.title}`);// template strings
+		console.log(`Body: ${note.body}`);
+}
+
 module.exports ={
 	addNote,
 	getAll,
 	getNote,
-	removeNote
+	removeNote,
+	logNote
 }
