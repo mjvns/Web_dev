@@ -1,1 +1,6 @@
-Contains all the source code for my note taking app.
+Node.js Project:
+A cool Note taking application built from scratch. Provides common functionalities :
+---> Adding Notes.
+---> Removing Notes.
+---> Read a specific Note
+---> List all the Notes.
