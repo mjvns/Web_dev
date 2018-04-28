@@ -1,0 +1,1 @@
+This folder contains the image files of the animals used in the project.
