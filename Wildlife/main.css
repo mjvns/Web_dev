@@ -1,0 +1,17 @@
+.main-container{
+    padding-left: 3px;
+    padding-right: 3px;
+    border: solid cornflowerblue;
+}
+h1{
+    font-size: xx-large;
+    font-family: Arial;
+    text-align: center;
+    color: whitesmoke;
+}
+body{
+    background-color: black;
+}
+p{
+    color:orangered;
+}
