@@ -5,13 +5,35 @@
     background-color: blue;
 }
 
+#color .square{
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    -o-transition-property: background-color;
+    -ms-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: 5s;
+    -moz-transition-duration: 5s;
+    -o-transition-duration: 5s;
+    -ms-transition-duration: 5s;
+    transition-duration: 5s;
+}
+
 /*Blue to Green*/
 #color .square:hover{
     background-color: green;
 }
 
 #circle .square{
-
+    -webkit-transition-property: border-radius,background-color;
+    -moz-transition-property: border-radius,background-color;
+    -o-transition-property: border-radius,background-color;
+    -ms-transition-property: border-radius,background-color;
+    transition-property: border-radius,background-color;
+    -webkit-transition-duration: 5s,3s;
+    -moz-transition-duration: 5s,3s;
+    -o-transition-duration: 5s,3s;
+    -ms-transition-duration: 5s,3s;
+    transition-duration: 5s,3s;
 }
 
 #circle .square:hover{
