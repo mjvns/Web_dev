@@ -1,1 +1,1 @@
-This folder contains my Django polls app as a part of my Django learning path available at <a href="https://docs.djangoproject.com/en/2.0/intro/">link</a>
+This folder contains my Django polls app as a part of my Django learning path available at Django official documentation page.
