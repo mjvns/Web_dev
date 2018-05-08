@@ -1,0 +1,23 @@
+li a {
+    color: green;
+}
+
+h1{
+color: crimson;
+}
+
+body{
+    background: white url("images/check.png");
+}
+
+label{
+    color: aqua;
+}
+
+li{
+    color: aqua;
+}
+
+a{
+    color: chartreuse;
+}
